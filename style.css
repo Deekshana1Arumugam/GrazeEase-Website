@@ -1,0 +1,146 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Poppins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 1.3rem 2rem;
+    font-size: 20px;
+    box-shadow:5px 5px 20px rgba(0,0,0,.5);
+    background:rgb(130, 204, 39);
+    transition: transform 0.2s ease;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: black !important;
+}
+.navbar .shopping{
+    position: relative;
+    text-align: right;
+}
+.navbar .shopping img{
+    width: 40px;
+}
+.navbar .navbar-brand:hover a{
+    color: #fff;
+}
+#navbar .navbar-brand:hover{
+    transform: scale(1.5);
+}
+#navbar button:hover{
+    transform: scale(1.5);
+}
+.navbar .navbar-text{
+    transition: transform 0.3s ease;
+    color: #ccc;
+    font-weight: 200;
+    
+}
+.navbar .navbar-text:hover{
+    transform: scale(1.1);
+    color: #090909;
+}
+
+#navbarSupportedContent a{
+color: #fff;
+border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid black ;
+    
+}
+#navbarSupportedContent button{
+    background: black;
+    width:5rem;
+    border-radius: 15px;
+    color: #fff;
+}
+.dropdown{
+    margin-left: 55px;
+}
+section{
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/***home**/
+#home{
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)), url(home_cow.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+
+}
+#home h1{
+    font-size: 100px;
+    color:white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc,
+                 0px 7px 0px #ccc;
+}
+#home p{
+    font-size: 18px;
+    color: #fff;
+}
+.enter{
+    background-color: chartreuse;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+
+/*******ABOUT***/
+#about{
+    background:linear-gradient(to right,#bce050,#b7fb51 100%),url(about_cow.jpg);
+    overflow:hidden;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(253, 252, 251);
+}
+#about p{
+    color: rgb(253, 253, 252);
+}
+
+#about .img{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 55px;
+}
+
+/* Dropdown Button Styling */
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+  
+ 
+@media (max-width: 767px) {
+    #navbar {
+      padding: 1rem 2rem;
+    }}
